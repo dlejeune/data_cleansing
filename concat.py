@@ -49,7 +49,7 @@ print(final_df.tail())
 final_df.to_csv("final.csv")
 
 ## We shouldn't need this cause there are no duplicates
-pt = final_df.pivot_table(index="transcript_id", columns="sample", values="TPM", aggfunc=np.mean)
+pt = final_df.pivot_table(index="ref_gene_id", columns="sample", values="TPM", aggfunc=np.mean)
 
 
 #pt = final_df.pivot(index=["ref_gene_id"], columns=["sample"], values="TPM")
