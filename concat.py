@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 # The input directory
-directory = "../out/"
+directory = "out/"
 
 final_df = pd.DataFrame()
 

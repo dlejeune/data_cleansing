@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 
-directory = "../data/"
+directory = "data/"
 
 def convert_to_list(x):
     #outdf = pd.DataFrame(columns= ["gene_id", "transcript_id","exon_number", "reference_id","ref_gene_id","cov", "FPKM", "TPM" ])
@@ -23,9 +23,13 @@ def convert_to_list(x):
 
     #outdf.append(tmp_dict, ignore_index=True)
     return pd.Series(tmp_dict)
-
+total_files = len(os.listdir(directory))
+count = 1
 for filename in os.listdir(directory):
     if filename.endswith(".tsv"):
+
+        print("File {} of {}".format(count, total_files))
+        count +=1
 
 
         df = pd.read_csv(os.path.join(directory, filename),
