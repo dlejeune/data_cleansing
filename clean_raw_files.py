@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 
-directory = "data/"
+directory = "../data/"
 
 def convert_to_list(x):
     #outdf = pd.DataFrame(columns= ["gene_id", "transcript_id","exon_number", "reference_id","ref_gene_id","cov", "FPKM", "TPM" ])
