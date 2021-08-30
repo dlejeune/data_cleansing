@@ -1,0 +1,6 @@
+data/*
+full/*
+out/*
+*.csv
+*.tsv
+*.db
